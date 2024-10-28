@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* *=========== Custom Styling Classes for Components =========== */
+/* Custom spacing for carousel */
+.carousel-spacing {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: -10.6rem;
+ margin-bottom: -10.6rem
+}
+
+.carousel-image {
+  width: 100%;    /* Make the image take the full width of its container */
+  height: 100%;   /* Make the image take the full height of its container */
+  object-fit: cover; /* This ensures the entire image fits inside without being cropped */
+}
+
+
+/* Navbar container */
+.navbar-container {
+  width: 90%;
+  max-width: var(--max-screen-xl);
+  margin: 0 auto;
+  top: 1.25rem;
+  padding: 0.5rem;
+  position: sticky;
+  z-index: 40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--card);
+  box-shadow: var(--shadow-light);
+}
+
+/* Navbar logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-logo img {
+  width: 2.5rem;  /* Adjust logo size */
+  height: auto;
+}
+
+.navbar-logo-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Navbar links */
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-link {
+  font-size: 1rem;
+  color: var(--foreground);
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: var(--primary);
+}
+
+/* Theme toggle and button adjustments */
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-github-button {
+  display: flex;
+  align-items: center;
+  color: var(--foreground);
+}
+
+.navbar-github-button:hover {
+  color: var(--primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-container {
+    padding: 0.25rem 1rem;
+  }
+}
+
+
+
+/* Footer Container */
+.footer-container {
+  padding: 2rem 0;
+  background-color: var(--card);
+  border-top: 1px solid var(--border);
+}
+
+/* Footer Logo */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Footer Text */
+.footer-text {
+  text-align: center;
+  font-size: 0.875rem; /* Reduce font size for legibility */
+  color: var(--muted-foreground);
+}
+
+/* Footer Link */
+.footer-link {
+  color: var(--primary);
+  transition: all 0.3s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Hero Section Container */
+.hero-container {
+  padding-top: 4rem; /* Add spacing at the top */
+  padding-bottom: 4rem; /* Add spacing at the bottom */
+}
+
+/* Hero Section Grid */
+.hero-grid {
+  display: grid;
+  justify-items: center;
+  max-width: 100%;
+  gap: 2rem; /* Balance spacing between elements */
+}
+
+/* Gradient Text */
+.hero-gradient-text {
+  background: linear-gradient(90deg, #D247BF, var(--primary));
+  color: transparent;
+}
+
+/* Hero Button Adjustments */
+.hero-button {
+  width: 75%;
+  max-width: 200px; /* Limit button width for responsiveness */
+}
+
+
+/* About Section Container */
+.about-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-width: 100%;
+}
+
+/* About Section Grid */
+.about-grid {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+}
+
+/* About Section Text */
+.about-text {
+  max-width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
+  color: var(--muted-foreground);
+}
+
+
+
+
+
+/* *=========== Orange theme =========== */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+
+    --primary: 24.6 95% 53.1%;
+    --primary-foreground: 60 9.1% 97.8%;
+
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 24.6 95% 53.1%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+
+    --card: 24 9.8% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+
+    --primary: 20.5 90.2% 48.2%;
+    --primary-foreground: 60 9.1% 97.8%;
+
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 20.5 90.2% 48.2%;
+  }
+}
+
+.shadow-light {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.085);
+}
+
+.shadow-dark {
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.141);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
