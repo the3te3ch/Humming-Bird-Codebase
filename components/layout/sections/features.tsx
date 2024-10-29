@@ -33,7 +33,7 @@ const featureList: FeaturesProps[] = [
 
 export const FeaturesSection = () => {
   return (
-    <section id="features" className="container mt-6 py-24 -mb-10 sm:py-32">
+    <section id="features" className="container mt-6 py-24 -mb-20 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
         Features
       </h2>
