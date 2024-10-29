@@ -39,13 +39,13 @@ export const Navbar = () => {
 
   return (
     <header className="shadow-inner bg-opacity-15 w-[94%] md:w-[90%] lg:w-[90%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
-      <Link href="/" className="font-bold text-lg flex items-center">
+      <Link href="/" className="font-bold text-md flex items-center">
         <Image
           src="/Logo.png"
           alt="Hummingbird Musikk Logo"
-          width={180}
-          height={180}
-          className="w-[16%] h-[16%] mr-2"
+          width={150}
+          height={150}
+          className="w-[18%] h-[18%]"
         />
         <h5 className="text-md font-bold text-center justify-center items-center">Hummingbird Musikk 
           Limited</h5>
@@ -76,7 +76,7 @@ export const Navbar = () => {
                       height={150}
                       className="w-[32%] h-[32%] "
                     />
-                    <h6 className="text-md font-bold justify-center items-center  text-center ml-1 -mt-0.8 ">Hummingbird Musikk Limited</h6>
+                    <h6 className="text-md  justify-center items-center  text-center ml-1 -mt-0.8 ">Hummingbird Musikk Limited</h6>
                   </Link>
                 </SheetTitle>
               </SheetHeader>
