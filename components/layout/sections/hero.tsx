@@ -19,7 +19,7 @@ const routeList: RouteProps[] = [
 
 export const HeroSection = () => {
   return (
-    <section className="container mt-3  w-full">
+    <section className="container mt-3 w-full">
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
         <div className="text-center space-y-8">
           <Badge variant="outline" className="text-sm py-2">
@@ -43,18 +43,22 @@ export const HeroSection = () => {
           </p>
           
           <div className="space-y-4 md:space-y-0 md:space-x-4">
-            <Button variant ="default" className="w-5/6 md:w-1/4 font-bold group/arrow">
-              <Link href="/catalog" className="flex items-center" target="_self">
-                Explore Catalog
-                <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
-              </Link>
-            </Button>
+            <Link href={routeList[2].href} passHref>
+              <Button asChild variant="default" className="w-5/6 md:w-1/4 font-bold group/arrow">
+                <span className="flex items-center">
+                  Explore Catalog
+                  <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
+                </span>
+              </Button>
+            </Link>
 
-            <Button  variant="secondary" className="w-5/6 md:w-1/4 font-bold">
-              <Link href="/about" className="flex items-center" target="_self">
-                Learn More
-              </Link>
-            </Button>
+            <Link href={routeList[3].href} passHref>
+              <Button asChild variant="secondary" className="w-5/6 md:w-1/4 font-bold">
+                <span className="flex items-center">
+                  Learn More
+                </span>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
