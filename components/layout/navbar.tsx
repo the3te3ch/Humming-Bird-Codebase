@@ -43,12 +43,12 @@ export const Navbar = () => {
         <Image
           src="/Logo.png"
           alt="Hummingbird Musikk Logo"
-          width={150}
-          height={150}
-          className="w-[24%] h-[24%] mr-2"
+          width={180}
+          height={180}
+          className="w-[16%] h-[16%] mr-2"
         />
-        <h4 className="text-xl font-bold text-center items-center">Hummingbird Musikk 
-          Limited</h4>
+        <h5 className="text-md font-bold text-center justify-center items-center">Hummingbird Musikk 
+          Limited</h5>
       </Link>
 
       {/* <!-- Mobile --> */}
@@ -72,16 +72,16 @@ export const Navbar = () => {
                     <Image
                       src="/Logo.png"
                       alt="Hummingbird Musikk Logo"
-                      width={20}
-                      height={20}
-                      className="w-[5%] h-[5%] mr-2"
+                      width={150}
+                      height={150}
+                      className="w-[32%] h-[32%] "
                     />
-                    <h6 className="text-sm text-center items-center">Hummingbird Musikk</h6>
+                    <h6 className="text-md font-bold justify-center items-center  text-center ml-1 -mt-0.8 ">Hummingbird Musikk Limited</h6>
                   </Link>
                 </SheetTitle>
               </SheetHeader>
 
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col text-sm gap-2">
                 {routeList.map(({ href, label }) => (
                   <Button
                     key={href}
@@ -119,7 +119,7 @@ export const Navbar = () => {
         </NavigationMenuList>
       </NavigationMenu>
 
-      <div className="hidden lg:flex">
+      <div className="hidden p-1 lg:flex">
         <ToggleTheme />
         
       </div>

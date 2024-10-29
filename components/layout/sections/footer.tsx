@@ -21,15 +21,9 @@ export const FooterSection = () => {
       <div className="p-10 bg-card border border-secondary rounded-xl">
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full items-center xl:col-span-2">
-            <Link href="/" className="flex font-bold items-center">
-              <Image
-                src="/Logo.png" // Ensure the logo path is correct
-                alt="Hummingbird Musikk Logo"
-                width={180}
-                height={180}
-                className="w-[28%] h-[28%] mr-2"
-              />
-              <h4 className="text-xl font-bold">Hummingbird Musikk Limited</h4>
+            <Link href="/" className="flex font-bold justify-center text-center">
+              
+              <h4 className="text-lg font-bold">Hummingbird Musikk Limited  &copy;2024</h4>
             </Link>
           </div>
 
@@ -43,7 +37,7 @@ export const FooterSection = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Got an enquiry?</h3>
+            <h3 className="font-bold text-md">Got an enquiry?</h3>
             <div>
               <Link href="contact" className="opacity-60 hover:opacity-100">
                 Contact Us
