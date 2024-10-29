@@ -12,8 +12,7 @@ const routeList: RouteProps[] = [
   { href: "/learners", label: "Learners' Books"},
   { href: "/catalog", label: "Catalog"},
   { href: "/about", label: "About Us" },
-  { href: "/contact", label: "Contact Us" },
-];
+  ];
 
 export const FooterSection = () => {
   return (
@@ -28,7 +27,7 @@ export const FooterSection = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Quick Links</h3>
+            <h3 className="font-bold text-md">Quick Links</h3>
             {routeList.map(({ href, label }) => (
               <Link key={href} href={href} className="opacity-60 hover:opacity-100">
                 {label}
