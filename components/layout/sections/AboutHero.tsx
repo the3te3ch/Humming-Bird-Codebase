@@ -22,7 +22,7 @@ const routeList: RouteProps[] = [
 export const AboutHero = () => {
   const { theme } = useTheme();
   return (
-    <section className="container -mt-10 w-full">
+    <section className="container -mt-14 w-full">
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
         <div className="text-center space-y-8">
           <Badge variant="outline" className="text-sm py-2">
