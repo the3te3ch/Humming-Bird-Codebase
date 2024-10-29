@@ -39,19 +39,19 @@ export const HeroSection = () => {
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`The Ultimate Publication and Printing Press Shop for all your Book Design and Publishing needs.`}
+            {`The Ultimate Publication and Printing Press Company for All Your Book Design and Publishing needs.`}
           </p>
           
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button variant ="default" className="w-5/6 md:w-1/4 font-bold group/arrow">
-              <Link href="https://hummingbirdmusikk.vercel.app/catalog" className="flex items-center" target="_self">
+              <Link href="/catalog" className="flex items-center" target="_self">
                 Explore Catalog
                 <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
               </Link>
             </Button>
 
             <Button  variant="secondary" className="w-5/6 md:w-1/4 font-bold">
-              <Link href="https://hummingbirdmusikk.vercel.app/about" className="flex items-center" target="_self">
+              <Link href="/about" className="flex items-center" target="_self">
                 Learn More
               </Link>
             </Button>
