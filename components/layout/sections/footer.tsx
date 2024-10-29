@@ -8,10 +8,10 @@ interface RouteProps {
 }
 
 const routeList: RouteProps[] = [
-  { href: "/workbooks", label: "Explore the Workbooks' Collection" },
-  { href: "/learners", label: "Explore the Learners' Books' Collection" },
-  { href: "/catalog", label: "Explore Our Catalog" },
-  { href: "/about", label: "Learn More About Us" },
+  { href: "/workbooks", label: "Workbooks" },
+  { href: "/learners", label: "Learners' Books"},
+  { href: "/catalog", label: "Catalog"},
+  { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact Us" },
 ];
 
