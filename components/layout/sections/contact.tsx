@@ -99,7 +99,7 @@ export const ContactSection = () => {
                 </p>
               </div>
               <p className="text-muted-foreground pl-6">
-                We&apos;re always happy to help.
+                
               </p>
             </div>
 
