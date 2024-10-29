@@ -67,17 +67,17 @@ export const ContactSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Need more information? Contact us today
+           
           </p>
 
           <div className="flex flex-col gap-4">
             <div>
               <div className="flex gap-2 items-center">
                 <Phone className="text-primary" />
-                <p className="font-medium">+254712345678</p>
+                <p className="font-medium">+254 718 600 266</p>
               </div>
               <p className="text-muted-foreground pl-6">
-                We&apos;re available 8:00am – 5:00pm EAT
+         
               </p>
             </div>
 
@@ -87,7 +87,7 @@ export const ContactSection = () => {
                 <p className="font-medium">info@hummingbirdmusikk.com</p>
               </div>
               <p className="text-muted-foreground pl-6">
-                Any enquiries? Reach out to us via email.
+                
               </p>
             </div>
 
@@ -95,7 +95,7 @@ export const ContactSection = () => {
               <div className="flex gap-2 items-center">
                 <Building2 className="text-primary" />
                 <p className="font-medium">
-                  Hummingbird Musikk - P.O. Box 342 Volda, Norway.
+                  Hummingbird Musikk - P.O. Box 342 Westlands, Kenya.
                 </p>
               </div>
               <p className="text-muted-foreground pl-6">
@@ -109,7 +109,7 @@ export const ContactSection = () => {
                 <p className="font-medium">Our Office Hours</p>
               </div>
               <p className="text-muted-foreground pl-6">
-                We&apos;re open Monday to Friday, 8:00am – 5:00pm EAT
+              Monday to Friday, 8:00am – 5:00pm EAT
               </p>
             </div>
           </div>
@@ -120,9 +120,7 @@ export const ContactSection = () => {
             <h2 className="text-xl font-bold tracking-wider text-primary">
               Send a Message
             </h2>
-            <p className="text-sm text-muted-foreground">
-              We&apos;re happy to assist you with your queries
-            </p>
+           
           </CardHeader>
 
           <CardContent>
