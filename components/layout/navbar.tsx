@@ -38,7 +38,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="shadow-inner bg-opacity-15 w-[94%] md:w-[90%] lg:w-[90%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
+    <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[90%] lg:w-[90%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-lg flex justify-center items-center text-center p-2 bg-card">
       <Link href="/" className="font-bold text-md flex items-center">
         <Image
           src="/Logo.png"
@@ -63,7 +63,7 @@ export const Navbar = () => {
 
           <SheetContent
             side="left"
-            className="flex flex-col justify-center rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
+            className="flex flex-col justify-center rounded-tr-lg rounded-br-lg bg-card border-secondary"
           >
             <div>
               <SheetHeader className="mb-4 ml-4">
@@ -81,7 +81,7 @@ export const Navbar = () => {
                 </SheetTitle>
               </SheetHeader>
 
-              <div className="flex flex-col text-sm gap-2">
+              <div className="flex flex-col items-center justify-center  text-center text-sm gap-2">
                 {routeList.map(({ href, label }) => (
                   <Button
                     key={href}
