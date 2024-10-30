@@ -1,6 +1,7 @@
 "use client";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 interface RouteProps {
   href: string;
@@ -41,13 +42,15 @@ export const HeroSection = () => {
           </p>
           
           <div className="pt-10 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
-            <Link href="/catalog" className="px-7 transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50
- py-3 w-full bg-orange-700 text-white text-center rounded-lg shadow-md block sm:w-auto">
-              Explore Our Catalog
+            <Link href="/catalog" className="px-7 transition-transform transform hover:scale-105 group/arrow hover:shadow-lg hover:shadow-orange-500/50
+ py-3 w-full bg-orange-700 text-white text-center ease-in-out rounded-lg shadow-md block sm:w-auto">
+              Explore Our Book Catalog
+             
             </Link>
-            <Link href="/about" className="px-7 py-3 transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50
- w-full border shadow-lg rounded-lg border-orange-700 text-white text-center  block sm:w-auto">
-             Learn More
+            <Link href="/about" className="px-7 bg-background ease-in-out text-primary py-3 transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50
+ w-full border shadow-lg rounded-lg border-orange-700 text-center group/arrow block sm:w-auto">
+             Learn More About Us
+             
             </Link>
           </div>
         </div>
