@@ -81,7 +81,7 @@ export const GeneralCatalog = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {bookList.map(({ imageUrl, title, description, link }, index) => (
-          <Card key={index} className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg">
+          <Card key={index} className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50"> {/* Added hover effects */}
             <CardHeader className="p-0">
               <div className="h-full overflow-hidden">
                 <Image

@@ -20,7 +20,8 @@ export function BookModal({ title, description }: BookModalProps) {
   return (
     <AlertDialog >
       <AlertDialogTrigger asChild>
-        <div className="flex justify-center">
+        <div className="flex transition-transform transform hover:scale-105 hover:shadow-sm hover:shadow-orange-500/50
+ justify-center">
           <Button variant="default">View Details</Button>
         </div>
       </AlertDialogTrigger>
@@ -30,7 +31,8 @@ export function BookModal({ title, description }: BookModalProps) {
           <AlertDialogDescription  className=" font-bold text-md">{description}</AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel  className="bg-orange-600 text-white font-bold">Go back to Catalog</AlertDialogCancel>
+          <AlertDialogCancel  className="bg-orange-600 transition-transform transform hover:scale-105 hover:shadow-sm hover:shadow-orange-500/50
+ text-white font-bold">Go back to Catalog</AlertDialogCancel>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>

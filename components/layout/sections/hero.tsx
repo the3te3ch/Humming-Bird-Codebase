@@ -41,10 +41,12 @@ export const HeroSection = () => {
           </p>
           
           <div className="pt-10 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
-            <Link href="/catalog" className="px-7 py-3 w-full bg-orange-700 text-white text-center rounded-md shadow-md block sm:w-auto">
+            <Link href="/catalog" className="px-7 transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50
+ py-3 w-full bg-orange-700 text-white text-center rounded-lg shadow-md block sm:w-auto">
               Explore Our Catalog
             </Link>
-            <Link href="/about" className="px-7 py-3 w-full border shadow-md rounded-lg border-orange-700 text-white text-center  block sm:w-auto">
+            <Link href="/about" className="px-7 py-3 transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50
+ w-full border shadow-lg rounded-lg border-orange-700 text-white text-center  block sm:w-auto">
              Learn More
             </Link>
           </div>
