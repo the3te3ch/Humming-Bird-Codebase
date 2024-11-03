@@ -37,11 +37,11 @@ export const HeroSection = () => {
             </h1>
           </div>
 
-          <p className="max-w-screen-sm mx-auto text-xl font-semibold mb-2">
+          <p className="max-w-screen-sm mx-auto text-lg ">
             {`The Ultimate Publication and Printing Press Company for All Your Book Design and Publishing needs.`}
           </p>
           
-          <div className="pt-5 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
+          <div className="pt-2 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
             <Link href="/catalog" className="px-7 transition-transform transform hover:scale-105 group/arrow hover:shadow-lg hover:shadow-orange-500/50
  py-3 w-full bg-orange-700 text-white text-center ease-in-out rounded-lg shadow-md block sm:w-auto">
               Explore Our Book Catalog

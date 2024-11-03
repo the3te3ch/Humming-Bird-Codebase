@@ -9,7 +9,7 @@ export const ToggleTheme = () => {
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       size="icon"
       variant="ghost"
-      className="w-full justify-start"
+      className="w-full justify-end "
     >
       <div className="flex gap-2 dark:hidden">
         <Moon className="size-10" />

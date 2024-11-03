@@ -40,15 +40,15 @@ export const Navbar = () => {
   return (
     <header className="shadow-inner  bg-opacity-15 w-full top-0 sticky z-40 bg-card">
       <div className="w-full flex justify-between items-center p-2 px-4"> {/* Adjusted container */}
-        <Link href="/" className="font-bold text-md flex items-center">
+        <Link href="/" className="font-bold ml-1 laptop:mr-2 mr-4 text-md flex items-center">
           <Image
             src="/Logo.png"
             alt="Hummingbird Musikk Logo"
             width={180}
             height={180}
-            className="w-[18%] h-[18%]"
+            className="w-[18%] mr-2 h-[18%]"
           />
-          <h6 className="text-xs ml-3 mr-5 font-semibold items-center justify-center text-center">
+          <h6 className="text-[0.72rem] ml-3 mr-3  laptop:text-sm laptop:-ml-1 laptop:mr-2 largeTablet:ml-[9rem] largeTablet:text-[1rem] font-bold items-center justify-center text-center">
             Hummingbird Musikk Limited
           </h6>
         </Link>
@@ -78,7 +78,7 @@ export const Navbar = () => {
                         height={180}
                         className="w-[24%] h-[24%]"
                       />
-                      <h6 className="text-sm font-semibold">
+                      <h6 className="text-sm font-bold ">
                         Hummingbird Musikk Limited
                       </h6>
                     </Link>
@@ -109,12 +109,12 @@ export const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <NavigationMenu className="hidden lg:flex">
+        <NavigationMenu className="hidden  mr-20 -ml-28 justify-center items-center text-center  lg:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
               {routeList.map(({ href, label }) => (
                 <NavigationMenuLink key={href} asChild>
-                  <Link href={href} className="text-base px-2">
+                  <Link href={href} className="text-sm mr-8 font-bold px-[0.001rem]">
                     {label}
                   </Link>
                 </NavigationMenuLink>
