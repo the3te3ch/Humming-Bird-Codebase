@@ -57,7 +57,7 @@ export const ContactSection = () => {
   }
 
   return (
-    <section id="contact" className="container w-[94%] py-24 sm:py-32">
+    <section id="contact" className="container w-[98%] py-24 sm:py-32">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8  px-3 ">
         <div>
           <div className="mb-4">
@@ -137,7 +137,7 @@ export const ContactSection = () => {
                       <FormItem>
                         <FormLabel>First Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your First Name" {...field} />
+                          <Input placeholder="First Name" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -150,7 +150,7 @@ export const ContactSection = () => {
                       <FormItem>
                         <FormLabel>Last Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your Last Name" {...field} />
+                          <Input placeholder="Last Name" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
