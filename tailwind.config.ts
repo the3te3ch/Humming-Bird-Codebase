@@ -62,6 +62,12 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      screens: {
+        tablet: "640px",     // Additional custom screen size for tablets
+        laptop: "1024px",    // Additional custom screen size for laptops
+        desktop: "1280px",   // Additional custom screen size for desktops
+        hdr: "1920px",       // New custom breakpoint for ultra-large displays
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
