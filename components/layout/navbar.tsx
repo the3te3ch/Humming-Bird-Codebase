@@ -38,8 +38,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="shadow-inner bg-opacity-15 w-full top-0 mx-auto sticky z-40 bg-card">
-      <div className="w-[94%] mx-auto flex justify-between items-center p-2">
+    <header className="shadow-inner  bg-opacity-15 w-full top-0 sticky z-40 bg-card">
+      <div className="w-full flex justify-between items-center p-2 px-4"> {/* Adjusted container */}
         <Link href="/" className="font-bold text-md flex items-center">
           <Image
             src="/Logo.png"
@@ -48,12 +48,12 @@ export const Navbar = () => {
             height={180}
             className="w-[18%] h-[18%]"
           />
-          <h5 className="text-[14px]  ml-3 font-bold items-center justify-center text-center">
+          <h5 className="text-[14px] ml-3 font-bold items-center justify-center text-center">
             Hummingbird Musikk Limited
           </h5>
         </Link>
 
-        {/* <!-- Mobile --> */}
+        {/* Mobile Menu */}
         <div className="flex items-center lg:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
@@ -85,7 +85,7 @@ export const Navbar = () => {
                   </SheetTitle>
                 </SheetHeader>
 
-                <div className="flex flex-col  text-sm gap-2">
+                <div className="flex flex-col text-sm gap-2">
                   {routeList.map(({ href, label }) => (
                     <Button
                       key={href}
@@ -108,7 +108,7 @@ export const Navbar = () => {
           </Sheet>
         </div>
 
-        {/* <!-- Desktop --> */}
+        {/* Desktop Menu */}
         <NavigationMenu className="hidden lg:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -127,6 +127,7 @@ export const Navbar = () => {
           <ToggleTheme />
         </div>
       </div>
+
       {/* Orange line with shadow effect */}
       <div className="w-full h-[0.1rem] bg-orange-600 shadow-b-xl"></div>
     </header>
