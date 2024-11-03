@@ -25,13 +25,13 @@ export const BookCarousel: React.FC = () => {
     "/book4.jpg",
     "/book5.jpg",
     "/book6.png",
-    "/cre garde 2 (1).jpg",
-    "/cre grade 3.jpg",
-    "/cre grade 4.jpg",
-    "/cre grade 9.jpg",
-    "/environmental activities grade 1.jpg",
-    "/environmental activities grade 2.jpg",
-    "/environmental activities grade 3.jpg",
+    "/cre-2.jpg",
+    "/cre-3.jpg",
+    "/cre-4.jpg",
+    "/cre-9.jpg",
+    "/environmental-activities-1.jpg",
+    "/environmental-activities-2.jpg",
+    "/environmental-activities-3.jpg",
   ];
 
   // Create a reference to the autoplay plugin
