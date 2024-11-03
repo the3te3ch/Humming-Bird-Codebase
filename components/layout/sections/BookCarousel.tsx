@@ -38,10 +38,10 @@ export const BookCarousel: React.FC = () => {
   const autoPlayPlugin = React.useMemo(() => Autoplay({ delay: 1450 }), []);
 
   return (
-    <div className="relative flex justify-center items-center min-h-screen -mb-[12rem] -mt-[12rem] md:-mb-[12rem] md:-mt-[12rem] sm:-mb-[12rem] sm:-mt-[10rem]">
+    <div className="relative flex justify-center items-center min-h-screen -mb-[12rem] -mt-[12rem] md:-mb-[10rem] md:-mt-[10rem] sm:-mb-[10rem] sm:-mt-[10rem]">
       <Carousel
         plugins={[autoPlayPlugin]} // Use the autoplay plugin
-        className="w-[75%] mr-10 ml-10"
+        className="w-[72%] lg:w-[90%] md:w-[90%] xl:w-[90%] lg:mt-12 lg:mb-12   "
         onMouseEnter={autoPlayPlugin.stop}
        
         opts={{

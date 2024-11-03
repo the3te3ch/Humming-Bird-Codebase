@@ -48,7 +48,7 @@ export const Navbar = () => {
             height={180}
             className="w-[18%] h-[18%]"
           />
-          <h5 className="text-md font-bold text-center">
+          <h5 className="text-[14px]  ml-3 font-bold items-center justify-center text-center">
             Hummingbird Musikk Limited
           </h5>
         </Link>
@@ -85,7 +85,7 @@ export const Navbar = () => {
                   </SheetTitle>
                 </SheetHeader>
 
-                <div className="flex flex-col items-center justify-center text-center text-sm gap-2">
+                <div className="flex flex-col  text-sm gap-2">
                   {routeList.map(({ href, label }) => (
                     <Button
                       key={href}
