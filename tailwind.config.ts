@@ -63,6 +63,7 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       screens: {
+        phone: "428px",
         tablet: "640px",     // Additional custom screen size for tablets
         laptop: "1024px",    // Additional custom screen size for laptops
         desktop: "1280px",   // Additional custom screen size for desktops
