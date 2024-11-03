@@ -9,19 +9,29 @@ html {
 
 /* *=========== Custom Styling Classes for Components =========== */
 /* Custom spacing for carousel */
-.carousel-spacing {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  margin-top: -10.6rem;
- margin-bottom: -10.6rem
-}
+
 
 .carousel-image {
   width: 100%;    /* Make the image take the full width of its container */
   height: 100%;   /* Make the image take the full height of its container */
-  object-fit: cover; /* This ensures the entire image fits inside without being cropped */
+  object-fit: fill; /* This ensures the entire image fits inside without being cropped */
 }
 
+@keyframes customScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Track styling for continuous filmstrip effect */
+.carousel-track {
+  display: flex;
+  gap: 1px; /* Decrease the gap for a tighter filmstrip look */
+  animation: customScroll 5s linear infinite; /* Faster speed */
+}
+
+.carousel-track:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}
 
 /* Navbar container */
 .navbar-container {

@@ -11,16 +11,20 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Hummingbird Musikk Limited",
-  description: "Sing the Moment."
+  description: "Sing the Moment.",
+  icons: {
+    icon: '/Logo.png', // Link to your favicon
+  }
 }
 
-export default function RootLaeyout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
+      
       <body className={cn("min-h-screen bg-background", inter.className)}>
         <ThemeProvider
           attribute="class"
@@ -29,7 +33,6 @@ export default function RootLaeyout({
           disableTransitionOnChange
         >
           <Navbar />
-
           {children}
           <SpeedInsights />
           <FooterSection />

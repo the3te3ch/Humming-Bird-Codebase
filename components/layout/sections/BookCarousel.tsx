@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -13,7 +12,7 @@ import {
 import Image from "next/image"; // Importing Image from Next.js
 
 export const BookCarousel: React.FC = () => {
-  // Define an array of image paths for  reference in the carousel
+  // Define an array of image paths for reference in the carousel
   const imagePaths = [
     "/C2.jpg",
     "/C3.jpg",
@@ -26,13 +25,20 @@ export const BookCarousel: React.FC = () => {
     "/book4.jpg",
     "/book5.jpg",
     "/book6.png",
+    "/cre garde 2 (1).jpg",
+    "/cre grade 3.jpg",
+    "/cre grade 4.jpg",
+    "/cre grade 9.jpg",
+    "/environmental activities grade 1.jpg",
+    "/environmental activities grade 2.jpg",
+    "/environmental activities grade 3.jpg",
   ];
 
   // Create a reference to the autoplay plugin
   const autoPlayPlugin = React.useMemo(() => Autoplay({ delay: 2000 }), []);
 
   return (
-    <div className="relative flex justify-center items-center min-h-screen -mb-[10rem] -mt-[10rem]  carousel-spacing">
+    <div className="relative flex justify-center items-center min-h-screen -mb-[12rem] -mt-[12rem] md:-mb-[12rem] md:-mt-[12rem] sm:-mb-[12rem] sm:-mt-[10rem]">
       <Carousel
         plugins={[autoPlayPlugin]} // Use the autoplay plugin
         className="w-[75%]"
@@ -43,21 +49,17 @@ export const BookCarousel: React.FC = () => {
           loop: true, // Enable continuous looping
         }}
       >
-        <CarouselContent className="-ml-4">
+        <CarouselContent className="-ml-4 carousel-track">
           {imagePaths.map((src, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-4">
-              <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-rectangle items-center justify-center p-2">
-                    <Image
-                      src={src}
-                      alt={`Carousel Image ${index + 1}`}
-                      className="object-fill aspect-rectangle w-full rounded-md h-full"
-                      width={600} 
-                      height={600}
-                    />
-                  </CardContent>
-                </Card>
+              <div className="p-1 flex aspect-rectangle items-center justify-center">
+                <Image
+                  src={src}
+                  alt={`Carousel Image ${index + 1}`}
+                  className="object-fill carousel-image aspect-rectangle w-full rounded-tr-2xl rounded-br-2xl h-full"
+                  width={600}
+                  height={600}
+                />
               </div>
             </CarouselItem>
           ))}
