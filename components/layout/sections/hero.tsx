@@ -37,7 +37,7 @@ export const HeroSection = () => {
             </h1>
           </div>
 
-          <p className="max-w-screen-sm mx-auto text-sm font-bold mb-2">
+          <p className="max-w-screen-sm mx-auto text-md font-semibold mb-2">
             {`The Ultimate Publication and Printing Press Company for All Your Book Design and Publishing needs.`}
           </p>
           
