@@ -48,9 +48,9 @@ export const Navbar = () => {
             height={180}
             className="w-[18%] h-[18%]"
           />
-          <h5 className="text-[14px] ml-3 font-bold items-center justify-center text-center">
+          <h6 className="text-xs ml-3 mr-5 font-semibold items-center justify-center text-center">
             Hummingbird Musikk Limited
-          </h5>
+          </h6>
         </Link>
 
         {/* Mobile Menu */}
@@ -65,7 +65,7 @@ export const Navbar = () => {
 
             <SheetContent
               side="left"
-              className="flex flex-col justify-center rounded-tr-lg rounded-br-lg bg-card"
+              className="flex flex-col justify-center rounded-tr-2xl rounded-br-2xl bg-card"
             >
               <div>
                 <SheetHeader className="mb-4">
@@ -78,14 +78,14 @@ export const Navbar = () => {
                         height={180}
                         className="w-[24%] h-[24%]"
                       />
-                      <h6 className="text-md font-bold">
+                      <h6 className="text-sm font-semibold">
                         Hummingbird Musikk Limited
                       </h6>
                     </Link>
                   </SheetTitle>
                 </SheetHeader>
 
-                <div className="flex flex-col text-sm gap-2">
+                <div className="flex flex-col text-xs gap-1">
                   {routeList.map(({ href, label }) => (
                     <Button
                       key={href}
