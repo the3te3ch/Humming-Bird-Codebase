@@ -34,16 +34,33 @@ export const BookCarousel: React.FC = () => {
     "/book6.png",
   ];
 
-  // Create a reference to the autoplay plugin
+  // Crea=te a reference to the autoplay plugin
   const autoPlayPlugin = React.useMemo(() => Autoplay({ delay: 1450 }), []);
 
   return (
-    <div className="relative flex justify-center items-center min-h-screen -mb-[12rem] -mt-[12rem] md:-mb-[10rem] md:-mt-[10rem] sm:-mb-[10rem] sm:-mt-[10rem]">
+    <div className="relative  flex justify-center items-center min-h-screen
+     smallPhone:-mb-[8rem] smallPhone:-mt-[6rem] 
+     largePhone:-mb-[4rem] largePhone:-mt-[4rem]
+      largeTablet:-mb-[6rem] largeTablet:-mt-[6rem]  
+     laptop:-mb-[6rem] laptop:-mt-[8rem]
+     desktop:-mb-[6rem] desktop:-mt-[12rem]
+     hdr:-mb-[8rem] hdr:-mt-[12rem]
+     ultraWide:-mb-[8rem] ultraWide:-mt-[12rem]
+">
+
       <Carousel
         plugins={[autoPlayPlugin]} // Use the autoplay plugin
-        className="w-[72%] lg:w-[90%] md:w-[90%] xl:w-[90%] lg:mt-12 lg:mb-12   "
+        className=" w-[70%] 
+     smallPhone:w-[75%] 
+     largePhone:w-[75%] 
+     smallTablet:w-[90%] 
+     largeTablet:w-[90%] 
+     laptop:w-[92%] 
+     desktop:w-[94%] 
+     hdr:w-[96%] 
+     ultraWide:w-[100%]   "
         onMouseEnter={autoPlayPlugin.stop}
-       
+
         opts={{
           align: "center",
           loop: true, // Enable continuous looping
@@ -66,8 +83,11 @@ export const BookCarousel: React.FC = () => {
         </CarouselContent>
 
         {/* Position Previous and Next buttons */}
-        <CarouselPrevious />
-        <CarouselNext />
+        <div className="flex justify-between mx-3">
+    <CarouselPrevious aria-label="Previous Item" className="m-3" />
+    <CarouselNext aria-label="Next Item" className="m-3" />
+</div>
+
       </Carousel>
     </div>
   );

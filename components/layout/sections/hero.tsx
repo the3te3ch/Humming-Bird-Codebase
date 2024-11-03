@@ -18,14 +18,14 @@ const routeList: RouteProps[] = [
 
 export const HeroSection = () => {
   return (
-    <section className="container  -mt-16 w-full">
+    <section className="container  -mt-16 w-full largeTablet:-mt-[6rem]">
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
-        <div className="text-center space-y-8">
-          <Badge variant="outline" className="text-sm py-2">
-            <span className="mr-2 text-sm">
-              <Badge>Professional</Badge>
+        <div className="text-center  space-y-8">
+          <Badge variant="outline" className="text-xs py-2">
+            <span className="mr-2 text-xs">
+              <Badge className="text-xs">Professional</Badge>
             </span>
-            <span className="text-sm">Printing & Publishing Press</span>
+            <span className="text-xs">Printing & Publishing Press</span>
           </Badge>
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
@@ -37,11 +37,11 @@ export const HeroSection = () => {
             </h1>
           </div>
 
-          <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
+          <p className="max-w-screen-sm mx-auto text-sm font-bold mb-2">
             {`The Ultimate Publication and Printing Press Company for All Your Book Design and Publishing needs.`}
           </p>
           
-          <div className="pt-10 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
+          <div className="pt-5 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
             <Link href="/catalog" className="px-7 transition-transform transform hover:scale-105 group/arrow hover:shadow-lg hover:shadow-orange-500/50
  py-3 w-full bg-orange-700 text-white text-center ease-in-out rounded-lg shadow-md block sm:w-auto">
               Explore Our Book Catalog

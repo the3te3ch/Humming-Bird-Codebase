@@ -22,10 +22,10 @@ const routeList: RouteProps[] = [
 export const AboutHero = () => {
   const { theme } = useTheme();
   return (
-    <section className="container -mt-16  mb-5 w-[94%]">
+    <section  className="container  -mt-16 w-full largeTablet:-mt-[6rem]">
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
         <div className="text-center space-y-8">
-          <Badge variant="outline" className="text-sm py-2">
+          <Badge variant="outline" className="text-xs py-2">
             <span className="mr-2 text-primary">
               <Badge>About Us</Badge>
             </span>
@@ -39,10 +39,10 @@ export const AboutHero = () => {
               </span>
             </h1>
           </div>
-          <p className="max-w-fill mx-auto font-medium text-md">
+          <p className="max-w-fill mx-auto  text-sm">
             {`Our mission is to deliver exceptional book designs, printing, and publishing services that elevate educational and literacy experiences for Kenyan Students.`}
           </p>
-          <p className="max-w-fill mx-auto font-md text-md ">
+          <p className="max-w-fill mx-auto  text-sm ">
             {`Our Vision is to be the leading provider of innovative and high-quality book solutions empowering authors and educators to inspire generations.`}
           </p>
 

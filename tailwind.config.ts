@@ -63,11 +63,15 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       screens: {
-        phone: "428px",
-        tablet: "640px",     // Additional custom screen size for tablets
-        laptop: "1024px",    // Additional custom screen size for laptops
-        desktop: "1280px",   // Additional custom screen size for desktops
-        hdr: "1920px",       // New custom breakpoint for ultra-large displays
+        smallPhone: "320px",     // Screen width 320px for very small phones
+        mediumPhone: "375px",    // Screen width 375px
+        largePhone: "425px",     // Screen width 425px for larger phones
+        smallTablet: "640px",    // Screen width 640px for small tablets
+        largeTablet: "768px",    // Screen width 768px for large tablets
+        laptop: "1024px",        // Screen width 1024px for laptops
+        desktop: "1380px",       // Screen width 1280px for desktops
+        hdr: "1920px",           // Screen width 1920px for ultra-large displays
+        ultraWide: "2560px",     // Screen width 2560px for ultra-wide screens
       },
       keyframes: {
         "accordion-down": {
