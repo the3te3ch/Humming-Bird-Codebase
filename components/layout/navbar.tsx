@@ -127,6 +127,8 @@ export const Navbar = () => {
           <ToggleTheme />
         </div>
       </div>
+      {/* Orange line with shadow effect */}
+      <div className="w-full h-[0.1rem] bg-orange-600 shadow-b-xl"></div>
     </header>
   );
 };

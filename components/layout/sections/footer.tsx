@@ -27,7 +27,7 @@ export const FooterSection = () => {
                 alt="Hummingbird Musikk Logo"
                 width={180}
                 height={180}
-                className="w-[22%] h-[22%] lg:w-[12%] md:w-[12%] xl:w-[12%]  mr-2"
+                className="w-[22%] h-[22%] lg:w-[16%] lg:h-[16%] md:w-[16%] xl:w-[16%]  mr-2"
               />
               <h4 className="text-[12px] lg:text-xl font-bold">Hummingbird Musikk Limited</h4>
             </Link>
