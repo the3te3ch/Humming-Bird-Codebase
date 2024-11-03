@@ -24,18 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <head>
-        {/* Favicon links */}
-        <head>
-
-          <link rel="icon" type="image/png" sizes="1302x1302" href="/Logo.png" />
-          <link rel="icon" type="image/png" sizes="316x316" href="/Logo.png" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/Logo.png" />
-          <link rel="icon" type="image/png" sizes="300x300" href="/Logo.png" />
-          <link rel="manifest" href="/site.webmanifest" />
-        </head>
-
-      </head>
+      
       <body className={cn("min-h-screen bg-background", inter.className)}>
         <ThemeProvider
           attribute="class"
