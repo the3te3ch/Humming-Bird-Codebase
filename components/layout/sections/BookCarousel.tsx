@@ -25,6 +25,13 @@ export const BookCarousel: React.FC = () => {
     "/book4.jpg",
     "/book5.jpg",
     "/book6.png",
+    "/cre garde 2 (1).jpg",
+    "/cre grade 3.jpg",
+    "/cre grade 4.jpg",
+    "/cre grade 9.jpg",
+    "/environmental activities grade 1.jpg",
+    "/environmental activities grade 2.jpg",
+    "/environmental activities grade 3.jpg",
   ];
 
   // Create a reference to the autoplay plugin
@@ -50,7 +57,7 @@ export const BookCarousel: React.FC = () => {
                   src={src}
                   alt={`Carousel Image ${index + 1}`}
                   className="object-fill carousel-image aspect-rectangle w-full rounded-tr-2xl rounded-br-2xl h-full"
-                  width={600} 
+                  width={600}
                   height={600}
                 />
               </div>
