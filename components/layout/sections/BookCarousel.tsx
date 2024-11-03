@@ -41,7 +41,7 @@ export const BookCarousel: React.FC = () => {
     <div className="relative flex justify-center items-center min-h-screen -mb-[12rem] -mt-[12rem] md:-mb-[12rem] md:-mt-[12rem] sm:-mb-[12rem] sm:-mt-[10rem]">
       <Carousel
         plugins={[autoPlayPlugin]} // Use the autoplay plugin
-        className="w-[75%]"
+        className="w-[75%] mr-10 ml-10"
         onMouseEnter={autoPlayPlugin.stop}
        
         opts={{

@@ -44,7 +44,7 @@ export const LearnersCatalog = () => {
   ];
 
   return (
-    <section id="learners-catalog" className="container w-[90%] py-24 sm:py-32">
+    <section id="learners-catalog" className="container w-[94%] py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">Learner's Books</h2>
         <h2 className="text-3xl md:text-4xl text-center font-bold">Explore Our Learner's Books Collection</h2>

@@ -18,7 +18,7 @@ const routeList: RouteProps[] = [
 
 export const HeroSection = () => {
   return (
-    <section className="container   w-full">
+    <section className="container  -mt-16 w-full">
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
         <div className="text-center space-y-8">
           <Badge variant="outline" className="text-sm py-2">
