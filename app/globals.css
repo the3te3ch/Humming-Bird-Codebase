@@ -12,26 +12,39 @@ html {
 
 
 .carousel-image {
-  width: 100%;    /* Make the image take the full width of its container */
-  height: 100%;   /* Make the image take the full height of its container */
-  object-fit: fill; /* This ensures the entire image fits inside without being cropped */
+  width: 100%;
+  /* Make the image take the full width of its container */
+  height: 100%;
+  /* Make the image take the full height of its container */
+  object-fit: fill;
+  /* This ensures the entire image fits inside without being cropped */
 }
 
 @keyframes customScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* Track styling for continuous filmstrip effect */
 .carousel-track {
   display: flex;
   gap: 1px; /* Decrease the gap for a tighter filmstrip look */
-  animation: customScroll 5s linear infinite; /* Faster speed */
+
+  animation: customScroll  (0, 0, 1, 1) infinite  ; /* Increased duration to 60 seconds */
+
+  /* Adjusted speed */
 }
 
 .carousel-track:hover {
   animation-play-state: paused; /* Pause animation on hover */
 }
+
+
 
 /* Navbar container */
 .navbar-container {
@@ -59,7 +72,8 @@ html {
 }
 
 .navbar-logo img {
-  width: 2.5rem;  /* Adjust logo size */
+  width: 2.5rem;
+  /* Adjust logo size */
   height: auto;
 }
 
@@ -131,7 +145,8 @@ html {
 /* Footer Text */
 .footer-text {
   text-align: center;
-  font-size: 0.875rem; /* Reduce font size for legibility */
+  font-size: 0.875rem;
+  /* Reduce font size for legibility */
   color: var(--muted-foreground);
 }
 
@@ -148,8 +163,10 @@ html {
 
 /* Hero Section Container */
 .hero-container {
-  padding-top: 4rem; /* Add spacing at the top */
-  padding-bottom: 4rem; /* Add spacing at the bottom */
+  padding-top: 4rem;
+  /* Add spacing at the top */
+  padding-bottom: 4rem;
+  /* Add spacing at the bottom */
 }
 
 /* Hero Section Grid */
@@ -157,7 +174,8 @@ html {
   display: grid;
   justify-items: center;
   max-width: 100%;
-  gap: 2rem; /* Balance spacing between elements */
+  gap: 2rem;
+  /* Balance spacing between elements */
 }
 
 /* Gradient Text */
@@ -169,7 +187,8 @@ html {
 /* Hero Button Adjustments */
 .hero-button {
   width: 75%;
-  max-width: 200px; /* Limit button width for responsiveness */
+  max-width: 200px;
+  /* Limit button width for responsiveness */
 }
 
 
@@ -275,6 +294,7 @@ html {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

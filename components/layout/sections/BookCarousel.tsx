@@ -35,7 +35,7 @@ export const BookCarousel: React.FC = () => {
   ];
 
   // Create a reference to the autoplay plugin
-  const autoPlayPlugin = React.useMemo(() => Autoplay({ delay: 2000 }), []);
+  const autoPlayPlugin = React.useMemo(() => Autoplay({ delay: 1450 }), []);
 
   return (
     <div className="relative flex justify-center items-center min-h-screen -mb-[12rem] -mt-[12rem] md:-mb-[12rem] md:-mt-[12rem] sm:-mb-[12rem] sm:-mt-[10rem]">
@@ -43,13 +43,13 @@ export const BookCarousel: React.FC = () => {
         plugins={[autoPlayPlugin]} // Use the autoplay plugin
         className="w-[75%]"
         onMouseEnter={autoPlayPlugin.stop}
-        onMouseLeave={() => autoPlayPlugin.play(false)}
+       
         opts={{
           align: "center",
           loop: true, // Enable continuous looping
         }}
       >
-        <CarouselContent className="-ml-4 carousel-track">
+        <CarouselContent className="-ml-3 carousel-track">
           {imagePaths.map((src, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-4">
               <div className="p-1 flex aspect-rectangle items-center justify-center">
