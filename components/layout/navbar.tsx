@@ -38,8 +38,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="shadow-inner  bg-opacity-15 w-full top-0 sticky z-40 bg-card">
-      <div className="w-full flex justify-between items-center p-2 px-4"> {/* Adjusted container */}
+    <header className="shadow-inner bg-opacity-15 w-full top-0 sticky z-40 bg-card">
+      <div className="w-full flex  items-center p-2 px-2">
         <Link href="/" className="font-bold ml-1 laptop:mr-2 mr-4 text-md flex items-center">
           <Image
             src="/Logo.png"
@@ -48,7 +48,7 @@ export const Navbar = () => {
             height={180}
             className="w-[18%] mr-2 h-[18%]"
           />
-          <h6 className="text-[0.72rem] ml-3 mr-3  laptop:text-sm laptop:-ml-1 laptop:mr-2 largeTablet:ml-[9rem] largeTablet:text-[1rem] font-bold items-center justify-center text-center">
+          <h6 className="text-[0.72rem] ml-3 mr-3 laptop:text-sm laptop:-ml-1 laptop:mr-2 largeTablet:ml-[9rem] largeTablet:text-[1rem] font-bold items-center justify-center text-center">
             Hummingbird Musikk Limited
           </h6>
         </Link>
@@ -109,12 +109,16 @@ export const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <NavigationMenu className="hidden  mr-20 -ml-28 justify-center items-center text-center  lg:flex">
+        <NavigationMenu className="hidden mr-20 -ml-28 justify-center items-center text-center lg:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
               {routeList.map(({ href, label }) => (
                 <NavigationMenuLink key={href} asChild>
-                  <Link href={href} className="text-sm mr-8 font-bold px-[0.001rem]">
+                  <Link
+                    href={href}
+                    className="text-[14px] mr-8 font-semibold px-1 py-3 transition duration-200 ease-in-out
+                       border-b-2 border-transparent hover:border-primary"
+                  >
                     {label}
                   </Link>
                 </NavigationMenuLink>
@@ -122,6 +126,7 @@ export const Navbar = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+
 
         <div className="hidden p-1 lg:flex">
           <ToggleTheme />
