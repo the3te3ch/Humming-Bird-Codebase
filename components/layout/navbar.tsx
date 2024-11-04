@@ -39,97 +39,99 @@ export const Navbar = () => {
 
   return (
     <header className="shadow-inner bg-opacity-15 w-full top-0 sticky z-40 bg-card">
-      <div className="w-full flex  items-center p-2 px-2">
-        <Link href="/" className="font-bold ml-1 laptop:mr-2 mr-4 text-md flex items-center">
+      <div className="flex items-center justify-between p-4 lg:px-8 w-full">
+        
+        {/* Logo and Logo Text */}
+        <Link href="/" className="flex items-center space-x-2">
           <Image
             src="/Logo.png"
             alt="Hummingbird Musikk Logo"
-            width={180}
-            height={180}
-            className="w-[18%] mr-2 h-[18%]"
+            width={30}
+            height={30}
+            className="w-8 h-8"
           />
-          <h6 className="text-[0.72rem] ml-3 mr-3 laptop:text-sm laptop:-ml-1 laptop:mr-2 largeTablet:ml-[9rem] largeTablet:text-[1rem] font-bold items-center justify-center text-center">
+          <h6 className="text-sm lg:text-md font-bold">
             Hummingbird Musikk Limited
           </h6>
         </Link>
 
+        {/* Desktop Menu */}
+        <NavigationMenu className="hidden lg:flex items-center justify-center mx-auto">
+          <NavigationMenuList className="flex space-x-8">
+            {routeList.map(({ href, label }) => (
+              <NavigationMenuItem key={href}>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href={href}
+                    className="relative text-[14px] font-semibold transition duration-200 ease-in-out
+                               after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0
+                               after:bg-primary after:shadow-b-lg after:transition-all after:duration-300
+                               hover:after:w-full"
+                  >
+                    {label}
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
+
+        {/* Toggle Theme for Desktop */}
+        <div className="hidden lg:flex">
+          <ToggleTheme />
+        </div>
+
         {/* Mobile Menu */}
-        <div className="flex items-center lg:hidden">
+        <div className="flex lg:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Menu
                 onClick={() => setIsOpen(!isOpen)}
-                className="cursor-pointer lg:hidden"
+                className="cursor-pointer text-lg"
               />
             </SheetTrigger>
 
             <SheetContent
               side="left"
-              className="flex flex-col justify-center rounded-tr-2xl rounded-br-2xl bg-card"
+              className="flex flex-col justify-center p-4 bg-card rounded-tr-2xl rounded-br-2xl"
             >
-              <div>
-                <SheetHeader className="mb-4">
-                  <SheetTitle className="flex items-center">
-                    <Link href="/" className="flex">
-                      <Image
-                        src="/Logo.png"
-                        alt="Hummingbird Musikk Logo"
-                        width={180}
-                        height={180}
-                        className="w-[24%] h-[24%]"
-                      />
-                      <h6 className="text-sm font-bold ">
-                        Hummingbird Musikk Limited
-                      </h6>
-                    </Link>
-                  </SheetTitle>
-                </SheetHeader>
+              <SheetHeader className="mb-4">
+                <SheetTitle className="flex items-center space-x-2">
+                  <Link href="/" className="flex items-center">
+                    <Image
+                      src="/Logo.png"
+                      alt="Hummingbird Musikk Logo"
+                      width={30}
+                      height={30}
+                      className="w-8 h-8"
+                    />
+                    <h6 className="text-sm font-bold">
+                      Hummingbird Musikk Limited
+                    </h6>
+                  </Link>
+                </SheetTitle>
+              </SheetHeader>
 
-                <div className="flex flex-col text-xs gap-1">
-                  {routeList.map(({ href, label }) => (
-                    <Button
-                      key={href}
-                      onClick={() => setIsOpen(false)}
-                      asChild
-                      variant="ghost"
-                      className="justify-start text-base"
-                    >
-                      <Link href={href}>{label}</Link>
-                    </Button>
-                  ))}
-                </div>
+              <div className="flex flex-col text-sm space-y-3">
+                {routeList.map(({ href, label }) => (
+                  <Button
+                    key={href}
+                    onClick={() => setIsOpen(false)}
+                    asChild
+                    variant="ghost"
+                    className="justify-start"
+                  >
+                    <Link href={href}>{label}</Link>
+                  </Button>
+                ))}
               </div>
 
-              <SheetFooter className="flex-col sm:flex-col justify-start items-start">
+              <SheetFooter className="flex flex-col mt-4 items-start">
                 <Separator className="mb-2" />
                 <ToggleTheme />
               </SheetFooter>
             </SheetContent>
           </Sheet>
-        </div>
-
-        {/* Desktop Menu */}
-        <NavigationMenu className="hidden mr-20 -ml-28 justify-center items-center text-center lg:flex">
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              {routeList.map(({ href, label }) => (
-                <NavigationMenuLink key={href} asChild>
-                  <Link
-                    href={href}
-                    className="text-[14px] mr-8 font-semibold px-1 py-3 transition duration-200 ease-in-out
-                       border-b-2 border-transparent hover:border-primary"
-                  >
-                    {label}
-                  </Link>
-                </NavigationMenuLink>
-              ))}
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-
-
-        <div className="hidden p-1 lg:flex">
-          <ToggleTheme />
         </div>
       </div>
 
