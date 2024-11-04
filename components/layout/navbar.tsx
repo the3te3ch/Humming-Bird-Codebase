@@ -50,7 +50,7 @@ export const Navbar = () => {
             height={30}
             className="w-8 h-8"
           />
-          <h6 className="text-sm lg:text-md font-bold">
+          <h6 className="text-md lg:text-md font-bold">
             Hummingbird Musikk Limited
           </h6>
         </Link>
@@ -63,9 +63,9 @@ export const Navbar = () => {
                 <NavigationMenuLink asChild>
                   <Link
                     href={href}
-                    className="relative text-[14px] font-semibold transition duration-200 ease-in-out
+                    className="relative text-md font-semibold transition duration-200 ease-in-out
                                after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0
-                               after:bg-primary after:shadow-b-lg after:transition-all after:duration-300
+                               after:bg-primary after:shadow-b-lg after:transition-all after:duration-600
                                hover:after:w-full"
                   >
                     {label}
@@ -105,7 +105,7 @@ export const Navbar = () => {
                       height={30}
                       className="w-8 h-8"
                     />
-                    <h6 className="text-sm font-bold">
+                    <h6 className="text-md font-bold">
                       Hummingbird Musikk Limited
                     </h6>
                   </Link>
