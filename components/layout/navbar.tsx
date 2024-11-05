@@ -50,7 +50,7 @@ export const Navbar = () => {
             height={30}
             className="w-8 h-8"
           />
-          <h6 className="text-md lg:text-md font-bold">
+          <h6 className="text-sm lg:text-md font-bold">
             Hummingbird Musikk Limited
           </h6>
         </Link>
@@ -105,7 +105,7 @@ export const Navbar = () => {
                       height={30}
                       className="w-8 h-8"
                     />
-                    <h6 className="text-md font-bold">
+                    <h6 className="text-sm font-bold">
                       Hummingbird Musikk Limited
                     </h6>
                   </Link>
