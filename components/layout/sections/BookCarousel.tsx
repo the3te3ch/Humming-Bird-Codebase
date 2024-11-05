@@ -43,13 +43,13 @@ export const BookCarousel: React.FC = () => {
     relative flex justify-center items-center min-h-screen
     mt-[-8rem] mb-[-8rem]          /* Default for mobile */
     smallPhone:mt-[-12rem] smallPhone:mb-[-12rem]
-    mediumPhone:mt-[-12rem] mediumPhone:mb-[-12rem]
-    largePhone:mt-[-12rem] largePhone:mb-[-14rem]
-    smallTablet:mt-[-12rem] smallTablet:mb-[-14rem]
-    largeTablet:mt-[-14rem] largeTablet:mb-[-14rem]
-    laptop:mt-[-14rem] laptop:mb-[-12rem]
-    desktop:mt-[-14rem] desktop:mb-[-12rem]
-    hdr:mt-[-14rem] hdr:mb-[-14rem]
+    mediumPhone:mt-[-10rem] mediumPhone:mb-[-12rem]
+    largePhone:mt-[-10rem] largePhone:mb-[-12rem]
+    smallTablet:mt-[-10rem] smallTablet:mb-[-12rem]
+    largeTablet:mt-[-10rem] largeTablet:mb-[-12rem]
+    laptop:mt-[-12rem] laptop:mb-[-12rem]
+    desktop:mt-[-8rem] desktop:mb-[-8rem]
+    hdr:mt-[-12rem] hdr:mb-[-12rem]
     ultraWide:mt-[14rem] ultraWide:mb-[-14rem]
   "
     >
