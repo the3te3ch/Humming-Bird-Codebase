@@ -50,7 +50,7 @@ export const WorkBooksCatalog = () => {
   ];
 
   return (
-    <section id="workbooks-catalog" className="container w-[94%] py-24 sm:py-32">
+    <section id="workbooks-catalog" className="container -mt-16 py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">Workbooks</h2>
         <h2 className="text-3xl md:text-4xl text-center font-bold">Explore Our Workbooks Collection</h2>

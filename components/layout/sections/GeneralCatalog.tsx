@@ -73,7 +73,7 @@ export const GeneralCatalog = () => {
   ];
 
   return (
-    <section id="catalog" className="container hdr:w-[100%] w-[94%] py-24  sm:py-32">
+    <section id="catalog" className="container hdr:w-[100%] w-[100%] py-24  sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary mb-2 tracking-wider">Catalog</h2>
         <h2 className="text-3xl md:text-4xl font-bold">Explore Our Collection</h2>
