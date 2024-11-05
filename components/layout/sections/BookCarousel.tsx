@@ -40,24 +40,25 @@ export const BookCarousel: React.FC = () => {
   return (
     <div
       className="
-        relative flex justify-center items-center min-h-screen
-        mt-[-8rem] mb-[-6rem]          /* Default for mobile */
-        smallPhone:mt-[-5rem] smallPhone:mb-[-5rem]
-        mediumPhone:mt-[-6rem] mediumPhone:mb-[-6rem]
-        largePhone:mt-[-7rem] largePhone:mb-[-7rem]
-        smallTablet:mt-[-8rem] smallTablet:mb-[-8rem]
-        largeTablet:mt-[-6rem] largeTablet:mb-[-6rem]
-        laptop:mt-[-4rem] laptop:mb-[-4rem]
-        desktop:mt-[-2rem] desktop:mb-[-2rem]
-        hdr:mt-[-1rem] hdr:mb-[-1rem]
-        ultraWide:mt-0 ultraWide:mb-0
-      "
+    relative flex justify-center items-center min-h-screen
+    mt-[-8rem] mb-[-8rem]          /* Default for mobile */
+    smallPhone:mt-[-10rem] smallPhone:mb-[-10rem]
+    mediumPhone:mt-[-8rem] mediumPhone:mb-[-10rem]
+    largePhone:mt-[-12rem] largePhone:mb-[-14rem]
+    smallTablet:mt-[-12rem] smallTablet:mb-[-17rem]
+    largeTablet:mt-[-20rem] largeTablet:mb-[-22rem]
+    laptop:mt-[-14rem] laptop:mb-[-16rem]
+    desktop:mt-[-12rem] desktop:mb-[-12rem]
+    hdr:mt-[-12rem] hdr:mb-[-16rem]
+    ultraWide:mt-[12rem] ultraWide:mb-[-16rem]
+  "
     >
+
       <Carousel
         plugins={[autoPlayPlugin]} // Use the autoplay plugin
         className="
-          w-[70%] smallPhone:w-[75%] mediumPhone:w-[80%] largePhone:w-[85%]
-          smallTablet:w-[90%] largeTablet:w-[92%] laptop:w-[94%] desktop:w-[96%] hdr:w-[98%] ultraWide:w-full
+          w-[75%] smallPhone:w-[75%] mediumPhone:w-[75%] largePhone:w-[75%]
+          smallTablet:w-[80%] largeTablet:w-[86%] laptop:w-[90%] desktop:w-[90%] hdr:w-[90%] ultraWide:w-[90%]
         "
         onMouseEnter={autoPlayPlugin.stop}
         opts={{
