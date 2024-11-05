@@ -6,11 +6,8 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* *=========== Custom Styling Classes for Components =========== */
 /* Custom spacing for carousel */
-
-
 .carousel-image {
   width: 100%;
   /* Make the image take the full width of its container */
@@ -35,7 +32,7 @@ html {
   display: flex;
   gap: 1px; /* Decrease the gap for a tighter filmstrip look */
 
-  animation: customScroll  (0, 0, 1, 1) infinite  ; /* Increased duration to 60 seconds */
+  animation: customScroll (0, 0, 1, 1) infinite; /* Increased duration to 60 seconds */
 
   /* Adjusted speed */
 }
@@ -43,8 +40,6 @@ html {
 .carousel-track:hover {
   animation-play-state: paused; /* Pause animation on hover */
 }
-
-
 
 /* Navbar container */
 .navbar-container {
@@ -126,8 +121,6 @@ html {
   }
 }
 
-
-
 /* Footer Container */
 .footer-container {
   padding: 2rem 0;
@@ -160,7 +153,6 @@ html {
   text-decoration: underline;
 }
 
-
 /* Hero Section Container */
 .hero-container {
   padding-top: 4rem;
@@ -180,7 +172,7 @@ html {
 
 /* Gradient Text */
 .hero-gradient-text {
-  background: linear-gradient(90deg, #D247BF, var(--primary));
+  background: linear-gradient(90deg, #d247bf, var(--primary));
   color: transparent;
 }
 
@@ -190,7 +182,6 @@ html {
   max-width: 200px;
   /* Limit button width for responsiveness */
 }
-
 
 /* About Section Container */
 .about-container {
@@ -213,10 +204,6 @@ html {
   font-weight: bold;
   color: var(--muted-foreground);
 }
-
-
-
-
 
 /* *=========== Orange theme =========== */
 @layer base {
