@@ -41,16 +41,9 @@ export const BookCarousel: React.FC = () => {
     <div
       className="
     relative flex justify-center items-center min-h-screen
-    mt-[-8rem] mb-[-8rem]          /* Default for mobile */
-    smallPhone:mt-[-12rem] smallPhone:mb-[-12rem]
-    mediumPhone:mt-[-10rem] mediumPhone:mb-[-12rem]
-    largePhone:mt-[-10rem] largePhone:mb-[-12rem]
-    smallTablet:mt-[-10rem] smallTablet:mb-[-12rem]
+    mt-[-12rem] mb-[-14rem]    
+    largePhone:mb-[-12rem] largePhone:mt-[-10rem]    /* Default for mobile */
     largeTablet:mt-[-10rem] largeTablet:mb-[-12rem]
-    laptop:mt-[-12rem] laptop:mb-[-12rem]
-    desktop:mt-[-8rem] desktop:mb-[-8rem]
-    hdr:mt-[-12rem] hdr:mb-[-12rem]
-    ultraWide:mt-[14rem] ultraWide:mb-[-14rem]
   "
     >
 
@@ -58,7 +51,7 @@ export const BookCarousel: React.FC = () => {
         plugins={[autoPlayPlugin]} // Use the autoplay plugin
         className="
           w-[75%] smallPhone:w-[75%] mediumPhone:w-[75%] largePhone:w-[75%]
-          smallTablet:w-[80%] largeTablet:w-[86%] laptop:w-[90%] desktop:w-[90%] hdr:w-[75%] ultraWide:w-[90%]
+          smallTablet:w-[75%] largeTablet:w-[75%] laptop:w-[90%] desktop:w-[90%] hdr:w-[90%] ultraWide:w-[90%]
         "
         onMouseEnter={autoPlayPlugin.stop}
         opts={{
@@ -73,7 +66,7 @@ export const BookCarousel: React.FC = () => {
                 <Image
                   src={src}
                   alt={`Carousel Image ${index + 1}`}
-                  className="object-fill aspect-rectangle w-full rounded-tr-2xl rounded-br-2xl h-full"
+                  className="object-cover aspect-rectangle w-full rounded-tr-2xl rounded-br-2xl h-full"
                   width={600}
                   height={600}
                 />
