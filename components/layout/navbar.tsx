@@ -30,8 +30,8 @@ const routeList: RouteProps[] = [
   { href: "/Projects", label: "Projects" },
   { href: "/learners", label: "Services" },
   { href: "/catalog", label: "Latest News" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/about", label: "About Us" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export const Navbar = () => {

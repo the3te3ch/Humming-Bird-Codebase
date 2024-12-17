@@ -10,10 +10,12 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   { href: "/Projects", label: "Projects" },
-  { href: "/learners", label: "Learners' Books" },
-  { href: "/catalog", label: "Catalog" },
+  { href: "/learners", label: "Services" },
+  { href: "/catalog", label: "Latest News" },
   { href: "/about", label: "About Us" },
+  { href: "/contact", label: "Contact Us" },
 ];
+
 
 export const FooterSection = () => {
   return (
