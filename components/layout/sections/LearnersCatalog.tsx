@@ -9,8 +9,7 @@ interface LearnerBook {
   link: string;
 }
 
-export const L
- = () => {
+export const LearnersCatalog = () => {
   const learnersBooks: LearnerBook[] = [
     {
       imageUrl: "/P6.jpg",
@@ -48,7 +47,6 @@ export const L
       description: "Covers the fundamentals of music theory, complete with exercises aimed at enhancing note-reading and rhythm skills.",
       link: "/books/Projects/music-workbook-1",
     },
-   
   ];
 
   return (
@@ -60,7 +58,10 @@ export const L
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {learnersBooks.map(({ imageUrl, title, description, link }: LearnerBook, index) => (
-          <Card key={index} className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50"> {/* Added hover effects */}
+          <Card
+            key={index}
+            className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50"
+          >
             <CardHeader className="p-0 gap-0">
               <div className="h-full overflow-hidden">
                 <Image
@@ -73,7 +74,7 @@ export const L
               </div>
               <CardTitle className="py-6 pb-4 text-md font-bold px-6">{title}</CardTitle>
             </CardHeader>
-           
+
             <CardFooter className="mt-auto font-bold items-center justify-center">
               <BookModal title={title} description={description} />
             </CardFooter>
