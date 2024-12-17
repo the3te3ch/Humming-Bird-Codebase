@@ -22,14 +22,8 @@ export const FooterSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full items-center xl:col-span-2">
             <Link href="/" className="flex font-bold items-center">
-              <Image
-                src="/Logo.png" // Ensure the logo path is correct
-                alt="Hummingbird Musikk Logo"
-                width={180}
-                height={180}
-                className="w-[22%] h-[22%] lg:w-[16%] lg:h-[16%] md:w-[16%] xl:w-[16%]  mr-2"
-              />
-              <h4 className="text-[12px] lg:text-xl font-bold">Hummingbird Musikk Limited</h4>
+              
+              <h1 className="text-[12px] lg:text-xl font-bold">The3 Te3ch Company &copy;2024</h1>
             </Link>
           </div>
 
@@ -55,7 +49,7 @@ export const FooterSection = () => {
         <Separator className="my-3" />
 
         <section className="text-center">
-          <p className="text-primary">&copy;2024</p>
+        
           <h3>
             Built and Maintained by
             <Link
@@ -63,7 +57,7 @@ export const FooterSection = () => {
               href="https://github.com/theyardmic"
               className="text-primary transition-all border-primary hover:border-b-2 ml-1"
             >
-              Strucker Inc.&copy;
+              Strucker Inc&copy;2024
             </Link>
           </h3>
         </section>
@@ -76,7 +70,7 @@ export const FooterSection = () => {
               href="https://linktr.ee/resleentechnative"
               className="text-primary transition-all border-primary hover:border-b-2 ml-1"
             >
-              Resleen Tech Native Ltd.&copy;
+              Resleen Tech Native Ltd&copy;2024
             </Link>
           </h3>
         </section>

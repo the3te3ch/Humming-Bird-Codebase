@@ -31,20 +31,20 @@ export const HeroSection = () => {
           <div className="max-w-screen-md mx-auto text-center smallPhone:text-2xl mediumPhone:text-3xl largePhone:text-4xl largeTablet:text-5xl laptop:text-6xl desktop:text-7xl ultrawide:text-8xl font-bold">
             <h1>
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                Humming Bird Musikk™
+                The3 Te3ch™
               </span>
-              Limited
+              Company
             </h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-base smallPhone:text-xs mediumPhone:text-sm largePhone:text-base smallTablet:text-lg largeTablet:text-xl laptop:text-2xl desktop:text-3xl desktop:w-full hdr:w-full hdr:text-4xl">
-            {`The Ultimate Publication and Printing Press Company for All Your Book Design and Publishing needs.`}
+            {`NextGen pioneers of innovation and technology. We’re here to break boundaries, spark creativity and lead the digital revolution. Partner with us as we shape the future with precision, expertise and unwavering commitment`}
           </p>
 
 
           <div className="pt-2 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
             <Link href="/catalog" className="px-7 transition-transform transform hover:scale-105 group/arrow hover:shadow-lg hover:shadow-orange-500/50 py-3 w-full bg-orange-700 text-white text-center ease-in-out rounded-lg shadow-md block sm:w-auto">
-              Explore Our Book Catalog
+              Explore Our Previous Projects
             </Link>
             <Link href="/about" className="px-7 bg-background ease-in-out text-primary py-3 transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50 w-full border shadow-lg rounded-lg border-orange-700 text-center group/arrow block sm:w-auto">
               Learn More About Us

@@ -10,10 +10,10 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hummingbird Musikk Limited",
-  description: "Sing the Moment.",
+  title: "The3 Te3ch Company",
+  description: "Next Generation Innovation",
   icons: {
-    icon: '/Logo.png', // Link to your favicon
+    icon: '/Logo.jpg', // Link to your favicon
   }
 }
 

@@ -44,14 +44,14 @@ export const Navbar = () => {
         {/* Logo and Logo Text */}
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/Logo.png"
-            alt="Hummingbird Musikk Logo"
+            src="/Logo.jpg"
+            alt="The3 Te3chLogo"
             width={30}
             height={30}
             className="w-8 h-8"
           />
           <h6 className="text-sm lg:text-md font-bold">
-            Hummingbird Musikk Limited
+            The3 Te3ch Company
           </h6>
         </Link>
 
@@ -99,14 +99,14 @@ export const Navbar = () => {
                 <SheetTitle className="flex items-center space-x-2">
                   <Link href="/" className="flex items-center">
                     <Image
-                      src="/Logo.png"
-                      alt="Hummingbird Musikk Logo"
+                      src="/Logo.jpg"
+                      alt="The3 Te3chLogo"
                       width={30}
                       height={30}
                       className="w-8 h-8"
                     />
                     <h6 className="text-sm font-bold">
-                      Hummingbird Musikk Limited
+                      The3 Te3ch Company
                     </h6>
                   </Link>
                 </SheetTitle>

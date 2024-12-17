@@ -84,7 +84,7 @@ export const ContactSection = () => {
             <div>
               <div className="flex gap-2 items-center">
                 <Mail className="text-primary" />
-                <p className="font-medium">info@hummingbirdmusikk.com</p>
+                <p className="font-medium">info@the3te3ch.com</p>
               </div>
               <p className="text-muted-foreground pl-6">
                 
@@ -95,7 +95,7 @@ export const ContactSection = () => {
               <div className="flex gap-2 items-center">
                 <Building2 className="text-primary" />
                 <p className="font-medium">
-                  Hummingbird Musikk - P.O. Box 342 Westlands, Kenya.
+                  The3 Te3ch- P.O. Box 342 Westlands, Kenya.
                 </p>
               </div>
               <p className="text-muted-foreground pl-6">
