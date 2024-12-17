@@ -12,41 +12,42 @@ interface Book {
 export const WorkBooksCatalog = () => {
   const workbooks: Book[] = [
     {
-      imageUrl: "/book1.jpg",
-      title: "Music Workbook 1",
+      imageUrl: "/P6.jpg",
+      title: "Project 1",
+      description: "A comprehensive course book aligned with the Competency-Based Curriculum, featuring engaging activities that promote practical learning.",
+      link: "/books/learners/creative-arts/grade-6",
+    },
+    {
+      imageUrl: "/P1.jpg",
+      title: "Project 2",
+      description: "This learner-centered book incorporates essential core competencies, Pertinent and Contemporary Issues (PCIs), as well as key values, skills, and attitudes through interactive activities.",
+      link: "/books/learners/creative-arts-and-sports/grade-9",
+    },
+    {
+      imageUrl: "/P2.jpg",
+      title: "Project 3",
+      description: "Features a variety of activities with simple, clear instructions designed to encourage self-study.",
+      link: "/books/learners/creative-activities/grade-2",
+    },
+    {
+      imageUrl: "/P5.jpg",
+      title: "Project 4",
+      description: "An all-encompassing course book adhering to the Competency-Based Curriculum; enabling learners to appreciate and apply the knowledge they acquire in their daily lives.",
+      link: "/books/learners/creative-arts/grade-5",
+    },
+    {
+      imageUrl: "/P3.jpg",
+      title: "Project 5",
+      description: "This book introduces Grade 3 students to hands-on creative arts activities, fostering imagination and skill development through fun, practical lessons.",
+      link: "/books/learners/creative-arts/grade-3",
+    },
+    {
+      imageUrl: "/P4.jpg",
+      title: "Project 6",
       description: "Covers the fundamentals of music theory, complete with exercises aimed at enhancing note-reading and rhythm skills.",
       link: "/books/workbooks/music-workbook-1",
     },
-    {
-      imageUrl: "/book2.jpg",
-      title: "Music Workbook 2",
-      description: "Builds upon Workbook 1 with advanced rhythm exercises and melodic exploration.",
-      link: "/books/workbooks/music-workbook-2",
-    },
-    {
-      imageUrl: "/book3.jpg",
-      title: "Music Workbook 3",
-      description: "Enhances understanding of musical notation and harmony to improve sight-reading skills.",
-      link: "/books/workbooks/music-workbook-3",
-    },
-    {
-      imageUrl: "/book4.jpg",
-      title: "Music Workbook 4",
-      description: "Challenges students with complex music theory concepts, including intervals and chord progressions.",
-      link: "/books/workbooks/music-workbook-4",
-    },
-    {
-      imageUrl: "/book5.jpg",
-      title: "Music Workbook 5",
-      description: "Focuses on advanced harmony and composition techniques, fostering creative expression.",
-      link: "/books/workbooks/music-workbook-5",
-    },
-    {
-      imageUrl: "/book6.png",
-      title: "Music Workbook 6",
-      description: "Completes the series with exercises focusing on counterpoint and advanced chord structures.",
-      link: "/books/workbooks/music-workbook-6",
-    },
+   
   ];
 
   return (
@@ -66,7 +67,7 @@ export const WorkBooksCatalog = () => {
                   alt={title}
                   width={300}
                   height={300}
-                  className="w-full aspect-square object-cover transition-all duration-200 ease-linear group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
+                  className="w-full aspect-rectangle object-cover transition-all duration-200 ease-linear group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
                 />
               </div>
               <CardTitle className="py-6 text-md pb-4 px-6">{title}</CardTitle>

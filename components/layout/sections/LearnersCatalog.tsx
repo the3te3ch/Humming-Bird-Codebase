@@ -12,35 +12,42 @@ interface LearnerBook {
 export const LearnersCatalog = () => {
   const learnersBooks: LearnerBook[] = [
     {
-      imageUrl: "/C6.jpg",
-      title: "Creative Arts Learner’s Book - Grade 6",
+      imageUrl: "/P6.jpg",
+      title: "Service 1",
       description: "A comprehensive course book aligned with the Competency-Based Curriculum, featuring engaging activities that promote practical learning.",
       link: "/books/learners/creative-arts/grade-6",
     },
     {
-      imageUrl: "/C9.jpg",
-      title: "Creative Arts and Sports Learner’s Book - Grade 9",
+      imageUrl: "/P1.jpg",
+      title: "Service 2",
       description: "This learner-centered book incorporates essential core competencies, Pertinent and Contemporary Issues (PCIs), as well as key values, skills, and attitudes through interactive activities.",
       link: "/books/learners/creative-arts-and-sports/grade-9",
     },
     {
-      imageUrl: "/C2.jpg",
-      title: "Creative Activities Learner’s Book - Grade 2",
+      imageUrl: "/P2.jpg",
+      title: "Service 3",
       description: "Features a variety of activities with simple, clear instructions designed to encourage self-study.",
       link: "/books/learners/creative-activities/grade-2",
     },
     {
-      imageUrl: "/C5.jpg",
-      title: "Creative Arts Learner’s Book - Grade 5",
+      imageUrl: "/P5.jpg",
+      title: "Service 4",
       description: "An all-encompassing course book adhering to the Competency-Based Curriculum; enabling learners to appreciate and apply the knowledge they acquire in their daily lives.",
       link: "/books/learners/creative-arts/grade-5",
     },
     {
-      imageUrl: "/C3.jpg",
-      title: "Creative Arts Learner’s Book - Grade 3",
+      imageUrl: "/P3.jpg",
+      title: "Service 5",
       description: "This book introduces Grade 3 students to hands-on creative arts activities, fostering imagination and skill development through fun, practical lessons.",
       link: "/books/learners/creative-arts/grade-3",
     },
+    {
+      imageUrl: "/P4.jpg",
+      title: "Service 6",
+      description: "Covers the fundamentals of music theory, complete with exercises aimed at enhancing note-reading and rhythm skills.",
+      link: "/books/workbooks/music-workbook-1",
+    },
+   
   ];
 
   return (
