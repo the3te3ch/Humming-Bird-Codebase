@@ -43,7 +43,7 @@ export const ContactSection = () => {
       firstName: "",
       lastName: "",
       email: "",
-      subject: "Workbooks",
+      subject: "Projects",
       message: "",
     },
   });
@@ -198,8 +198,8 @@ export const ContactSection = () => {
                             <SelectItem value="Learners&apos; Books">
                               Learners&apos; Books
                             </SelectItem>
-                            <SelectItem value="Workbooks">
-                              Workbooks
+                            <SelectItem value="Projects">
+                              Projects
                             </SelectItem>
                             <SelectItem value="Teachers&apos; Guides">
                               Teachers&apos; Guides

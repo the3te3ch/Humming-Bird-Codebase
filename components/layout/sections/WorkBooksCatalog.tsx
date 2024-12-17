@@ -10,7 +10,7 @@ interface Book {
 }
 
 export const WorkBooksCatalog = () => {
-  const workbooks: Book[] = [
+  const Projects: Book[] = [
     {
       imageUrl: "/P6.jpg",
       title: "Project 1",
@@ -45,20 +45,20 @@ export const WorkBooksCatalog = () => {
       imageUrl: "/P4.jpg",
       title: "Project 6",
       description: "Covers the fundamentals of music theory, complete with exercises aimed at enhancing note-reading and rhythm skills.",
-      link: "/books/workbooks/music-workbook-1",
+      link: "/books/Projects/music-workbook-1",
     },
    
   ];
 
   return (
-    <section id="workbooks-catalog" className="container -mt-16 py-24 sm:py-32">
+    <section id="Projects-catalog" className="container -mt-16 py-24 sm:py-32">
       <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">Workbooks</h2>
-        <h2 className="text-3xl md:text-4xl text-center font-bold">Explore Our Workbooks Collection</h2>
+        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">Projects</h2>
+        <h2 className="text-3xl md:text-4xl text-center font-bold">Explore Our Projects Collection</h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        {workbooks.map(({ imageUrl, title, description, link }: Book, index) => (
+        {Projects.map(({ imageUrl, title, description, link }: Book, index) => (
           <Card key={index} className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50"> {/* Added hover effects */}
             <CardHeader className="p-0 gap-0">
               <div className="h-full overflow-hidden">

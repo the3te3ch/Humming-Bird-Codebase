@@ -38,7 +38,7 @@ export const GeneralCatalog = () => {
       imageUrl: "/P4.jpg",
       title: "Service 6",
       description: "Covers the fundamentals of music theory, complete with exercises aimed at enhancing note-reading and rhythm skills.",
-      link: "/books/workbooks/music-workbook-1",
+      link: "/books/Projects/music-workbook-1",
     },
     {
       imageUrl: "/P6.jpg",
@@ -74,7 +74,7 @@ export const GeneralCatalog = () => {
       imageUrl: "/P4.jpg",
       title: "Project 6",
       description: "Covers the fundamentals of music theory, complete with exercises aimed at enhancing note-reading and rhythm skills.",
-      link: "/books/workbooks/music-workbook-1",
+      link: "/books/Projects/music-workbook-1",
     },
    
   ];

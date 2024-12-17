@@ -46,13 +46,13 @@ For inquiries or support, please contact us:
 
 ## Project Overview 📊
 
-**`The3 Te3ch™`** is committed to providing high-quality music education resources through professionally designed and printed workbooks. We support learners and educators by offering stepwise guidance from beginner to advanced levels, ensuring music theory is accessible to all ages, including preparation for formal exams like the IGCSE.
+**`The3 Te3ch™`** is committed to providing high-quality music education resources through professionally designed and printed Projects. We support learners and educators by offering stepwise guidance from beginner to advanced levels, ensuring music theory is accessible to all ages, including preparation for formal exams like the IGCSE.
 
 ## Features ✨
 
 - **Expert Book Design**: Captivating layouts that simplify learning.
 - **Publishing Solutions**: A seamless path from manuscript to publication.
-- **Music Theory Workbooks**: Structured lessons with exercises for progress tracking.
+- **Music Theory Projects**: Structured lessons with exercises for progress tracking.
 - **Mobile App Access**: Easily browse and purchase materials through the app.
 - **Professional Printing**: High-quality, durable books designed for use in classrooms and personal study.
 
@@ -60,7 +60,7 @@ For inquiries or support, please contact us:
 
 Our catalog includes:
 
-- **Music Workbook 1-6**: Progressive workbooks covering beginner to advanced levels of music theory.
+- **Music Workbook 1-6**: Progressive Projects covering beginner to advanced levels of music theory.
 - **Creative Activities Learner’s Books (Grades 2, 3, 5, 6, 9)**: Tailored resources for fostering creativity and developing music fundamentals.
 
 These resources are designed for young learners (as young as 5 years old) and those preparing for exams like IGCSE Year 11 Music.
@@ -72,7 +72,7 @@ To get started with **`The3 Te3ch™`**:
 1. **Visit [`The3 Te3ch™`](https://the3te3ch.com)**.
 2. **Browse the Catalog**: Explore our range of music theory books and learning materials.
 3. **Purchase and Download**: Order your desired materials directly from the app or website.
-4. **Track Progress**: Use the workbooks' built-in exercises to monitor progress in music theory and practice.
+4. **Track Progress**: Use the Projects' built-in exercises to monitor progress in music theory and practice.
 
 ## Contact Us 📞
 
