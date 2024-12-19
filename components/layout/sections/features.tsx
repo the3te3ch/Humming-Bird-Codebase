@@ -12,23 +12,54 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "Book",
-    title: "Professional Publishing",
+    icon: "Code",
+    title: "Web and Software Development",
     description:
-      "Comprehensive publishing services that ensure your vision is fully realized throughout every project.",
+      "We create custom, user-friendly websites and robust software solutions and applications designed to meet the unique needs of your business.",
   },
   {
-    icon: "Printer",
-    title: "Printing Press",
+    icon: "Palette",
+    title: "Branding and Graphic Design",
     description:
-      "High-quality, precision-driven printing that brings your work to life, utilizing durable, professional materials that enhance the visual appeal of your content.",
+      "Our expert team crafts memorable branding, printing, and stunning visual designs to establish a strong identity and leave a lasting impression.",
   },
   {
-    icon: "Brush",
-    title: "Book Design",
+    icon: "Megaphone",
+    title: "Digital Marketing",
     description:
-      "Expert design services that create visually captivating and engaging book layouts, covers, and illustrations tailored to meet your specific needs and target audience.",
+      "We help you reach your target audience through effective digital marketing strategies that drive traffic, engagement, and conversions.",
   },
+  {
+    icon: "Film",
+    title: "Digital Animation",
+    description:
+      "We bring your ideas to life with captivating digital animations that enhance storytelling and engage your audience visually.",
+  },
+  {
+    icon: "Camera",
+    title: "Photography",
+    description:
+      "Our professional photography services capture high-quality images that showcase your products, people, and brand in the best light.",
+  },
+  {
+    icon: "Video",
+    title: "Videography and Video Post Production",
+    description:
+      "We produce compelling video content and expertly edit footage to tell your story, enhancing your brand’s message and reach.",
+  },
+  {
+    icon: "Cpu",
+    title: "AI-Augmented Professional Development",
+    description:
+      "We offer cutting-edge AI tools and training to elevate the skills of professionals, driving growth and innovation in your workforce.",
+  },
+  {
+    icon: "Server",
+    title: "IT Services and Consultation",
+    description:
+      "We provide expert IT consultation and tailored technology solutions to empower businesses with seamless, efficient, and scalable digital transformations.",
+  },
+
 ];
 
 export const FeaturesSection = () => {
