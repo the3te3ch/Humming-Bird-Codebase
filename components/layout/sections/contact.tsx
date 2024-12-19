@@ -74,7 +74,9 @@ export const ContactSection = () => {
             <div>
               <div className="flex gap-2 items-center">
                 <Phone className="text-primary" />
-                <p className="font-medium">+254 718 600 266</p>
+                <p className="font-medium">+254797 622 129</p>
+                <p className="font-medium"> +1(612) 919 3221</p>
+                <p className="font-medium">+254746 382 828</p>
               </div>
               <p className="text-muted-foreground pl-6">
          
@@ -84,7 +86,7 @@ export const ContactSection = () => {
             <div>
               <div className="flex gap-2 items-center">
                 <Mail className="text-primary" />
-                <p className="font-medium">info@the3te3ch.com</p>
+                <p className="font-medium">th3tech3@gmail.com</p>
               </div>
               <p className="text-muted-foreground pl-6">
                 
@@ -95,7 +97,7 @@ export const ContactSection = () => {
               <div className="flex gap-2 items-center">
                 <Building2 className="text-primary" />
                 <p className="font-medium">
-                  The3 Te3ch- P.O. Box 342 Westlands, Kenya.
+                  The Te3ch Main Office - 342 Westlands, Kenya.
                 </p>
               </div>
               <p className="text-muted-foreground pl-6">
