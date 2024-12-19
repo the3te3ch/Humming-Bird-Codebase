@@ -33,19 +33,23 @@ export const AboutHero = () => {
           </Badge>
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
-            <h1>
+          <h1>
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                 Publishing and Printing Press
+              At Th3Tech, we are dedicated to using technology to solve Kenya’s most pressing challenges.
               </span>
+              With passion and innovation at our core, we deliver reliable solutions that empower businesses, individuals, and communities to thrive in the digital age.
             </h1>
           </div>
           <p className="max-w-fill mx-auto  text-xl ">
-            {`Our mission is to deliver exceptional book designs, printing, and publishing services that elevate educational and literacy experiences for Kenyan Students.`}
+            {`Our Mission Is To provide sustainable, impactful technology solutions that address Kenya’s unique needs, driving growth and enhancing everyday life.`}
           </p>
           <p className="max-w-fill mx-auto  text-xl ">
-            {`Our Vision is to be the leading provider of innovative and high-quality book solutions empowering authors and educators to inspire generations.`}
+            {`Our Vision Is To be Kenya’s leading tech brand, known for innovation and a commitment to transforming lives through cutting-edge solutions.`}
           </p>
 
+          <p className="max-w-fill mx-auto  text-xl ">
+            {`We don’t just create tech—we create solutions that matter.`}
+          </p>
          
         </div>
       </div>
