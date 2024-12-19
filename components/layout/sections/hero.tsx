@@ -8,8 +8,8 @@ interface RouteProps {
 }
 
 const routeList: RouteProps[] = [
-  { href: "/Projects", label: "Projects" },
-  { href: "/learners", label: "Learner's Books" },
+  { href: "/projects", label: "Projects" },
+  { href: "/services", label: "Learner's Books" },
   { href: "/catalog", label: "Catalog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
