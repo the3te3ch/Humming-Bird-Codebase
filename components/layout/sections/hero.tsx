@@ -31,14 +31,14 @@ export const HeroSection = () => {
           <div className="max-w-screen-md mx-auto text-center smallPhone:text-2xl mediumPhone:text-3xl largePhone:text-4xl largeTablet:text-5xl laptop:text-6xl desktop:text-7xl ultrawide:text-8xl font-bold">
             <h1>
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                The3 Te3ch™
+                Th3 Tech™ Company
               </span>
-              Company
+              Limited
             </h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-base smallPhone:text-xs mediumPhone:text-sm largePhone:text-base smallTablet:text-lg largeTablet:text-xl laptop:text-2xl desktop:text-3xl desktop:w-full hdr:w-full hdr:text-4xl">
-            {`NextGen pioneers of innovation and technology. We’re here to break boundaries, spark creativity and lead the digital revolution. Partner with us as we shape the future with precision, expertise and unwavering commitment`}
+            {`NextGen pioneers of innovation and technology. We’re here to break boundaries, spark creativity and lead the digital revolution.`}
           </p>
 
 
