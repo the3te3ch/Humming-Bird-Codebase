@@ -59,6 +59,12 @@ const featureList: FeaturesProps[] = [
     description:
       "We provide expert IT consultation and tailored technology solutions to empower businesses with seamless, efficient, and scalable digital transformations.",
   },
+  {
+    icon: "ShieldCheck",
+    title: "Cybersecurity Solutions",
+    description:
+      "We offer advanced cybersecurity services to protect your business from threats, ensuring secure and resilient digital operations.",
+  },
 
 ];
 
