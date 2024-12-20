@@ -103,7 +103,7 @@ export const TeamSection = () => {
   };
 
   return (
-    <section id="team" className="container -mb-24 w-[100%] py-24 sm:py-32">
+    <section id="team" className="container -mb-24 w-[90%] py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
           Team
@@ -114,7 +114,7 @@ export const TeamSection = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {teamList.map(
           (
             { imageUrl, firstName, lastName, positions, socialNetworks },
