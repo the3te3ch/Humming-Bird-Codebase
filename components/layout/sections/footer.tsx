@@ -1,7 +1,5 @@
-// FooterSection.js
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
-import Image from "next/image";
 
 interface RouteProps {
   href: string;
@@ -16,15 +14,13 @@ const routeList: RouteProps[] = [
   { href: "/contact", label: "Contact Us" },
 ];
 
-
 export const FooterSection = () => {
   return (
-    <footer id="footer" className="w-full  bg-card border-t border-secondary p-10">
+    <footer id="footer" className="w-full bg-card border-t border-secondary p-10">
       <div className="container mx-auto p-3">
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full items-center xl:col-span-2">
             <Link href="/" className="flex font-bold items-center">
-              
               <h1 className="text-[12px] lg:text-xl font-bold">The3 Te3ch Company &copy;2024</h1>
             </Link>
           </div>
@@ -45,13 +41,29 @@ export const FooterSection = () => {
                 Contact Us
               </Link>
             </div>
+            <div>
+              <Link
+                href="https://www.linkedin.com/Th3Tech"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                LinkedIn
+              </Link>
+            </div>
+            <div>
+              <Link
+                href="mailto:th3tech3@gmail.com"
+                className="opacity-60 hover:opacity-100"
+              >
+                Email Us
+              </Link>
+            </div>
           </div>
         </div>
 
         <Separator className="my-3" />
 
         <section className="text-center">
-        
           <h3>
             Built and Maintained by
             <Link
