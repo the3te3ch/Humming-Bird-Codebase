@@ -1,6 +1,7 @@
 import GithubIcon from "@/components/icons/github-icon";
 import LinkedInIcon from "@/components/icons/linkedin-icon";
 import XIcon from "@/components/icons/x-icon";
+import WhatsAppIcon from "@/components/icons/whatsapp-icon"; // import WhatsApp icon
 import {
   Card,
   CardContent,
@@ -10,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+
 interface TeamProps {
   imageUrl: string;
   firstName: string;
@@ -17,10 +19,12 @@ interface TeamProps {
   positions: string[];
   socialNetworks: SocialNetworkProps[];
 }
+
 interface SocialNetworkProps {
   name: string;
   url: string;
 }
+
 export const TeamSection = () => {
   const teamList: TeamProps[] = [
     {
@@ -36,6 +40,10 @@ export const TeamSection = () => {
         {
           name: "X",
           url: "#"
+        },
+        {
+          name: "WhatsApp",
+          url: "https://wa.me/+254746382828" // Example WhatsApp URL
         }
       ]
     },
@@ -52,6 +60,10 @@ export const TeamSection = () => {
         {
           name: "X",
           url: "#"
+        },
+        {
+          name: "WhatsApp",
+          url: "https://wa.me/+254797622129" // Example WhatsApp URL
         }
       ]
     },
@@ -68,11 +80,15 @@ export const TeamSection = () => {
         {
           name: "X",
           url: "#"
+        },
+        {
+          name: "WhatsApp",
+          url: "https://wa.me/+1(612)9193221" // Example WhatsApp URL
         }
       ]
     }
-    
   ];
+
   const socialIcon = (socialName: string) => {
     switch (socialName) {
       case "LinkedIn":
@@ -81,6 +97,8 @@ export const TeamSection = () => {
         return <GithubIcon />;
       case "X":
         return <XIcon />;
+      case "WhatsApp":
+        return <WhatsAppIcon />; // Add WhatsApp icon case
     }
   };
 
@@ -92,7 +110,7 @@ export const TeamSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold">
-          The Company Dream Team
+          Our Dream Team
         </h2>
       </div>
 
