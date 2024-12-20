@@ -9,6 +9,7 @@ import { GeneralCatalog } from "@/components/layout/sections/GeneralCatalog"; //
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import {BookCarousel} from "@/components/layout/sections/BookCarousel";
 import { FeaturesSection } from "@/components/layout/sections/features";
+import {TeamSection} from "@/components/layout/sections/team";
 
 export const metadata = {
   title: "Hummingbird Musikk",
@@ -44,10 +45,12 @@ export default function Home() {
       <AboutHero />
 
      <BookCarousel />
+    
       <FeaturesSection />
-
+      <TeamSection />
       <GeneralCatalog />
       <ContactSection />
+
     </>
   );
 }
